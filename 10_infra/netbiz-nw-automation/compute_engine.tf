@@ -1,7 +1,7 @@
 resource "google_compute_instance" "vscode-server-1" {
     name         = "vscode-server-1"
     machine_type = "e2-medium"
-    zone         = "asia-northeast1-a"
+    zone         = "us-central1-b"
 
     boot_disk {
         initialize_params {
@@ -17,5 +17,5 @@ resource "google_compute_instance" "vscode-server-1" {
 
 resource "google_compute_address" "nw-automation-vscode-server-1" {
   name   = "nw-automation-vscode-server-1"
-  region = "asia-northeast1"
+  region = "us-central1"
 }
